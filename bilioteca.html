@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Controle de Biblioteca: cadastre, empreste e devolva livros.">
-  <title>Controle de Biblioteca</title>
-  <link rel="stylesheet" href="biblioteca.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Controle de Biblioteca: cadastre, empreste e devolva livros.">
+        <title>Controle de Biblioteca</title>
+        <link rel="stylesheet" href="biblioteca.css">
+        <script src="biblioteca.js" defer></script>
 </head>
 <body>
 
   <header>
     <div class="coluna">
-      <a class="voltar" href="index.html">← Voltar para o início</a>
-      <h1>📚 Controle de Biblioteca</h1>
-      <p>Cadastre, empreste e devolva livros.</p>
+        <strong><a class="voltar" href="index.html">← Voltar para o início</a></strong>
+        <h1>📚 Controle de Biblioteca</h1>
+      <p>Cadastre, empreste e devolva us livru.</p>
     </div>
   </header>
 
@@ -44,7 +45,7 @@
           <option>Outros</option>
         </select>
 
-        <button type="submit" class="botao">Cadastrar livro</button>
+        <button type="submit" class="botao" id="cadastrar">Cadastrar livro</button>
       </form>
     </section>
 
@@ -57,6 +58,5 @@
 
   <footer>Projeto didático. Os dados ficam salvos apenas neste navegador.</footer>
 
-  <script src="script.js"></script>
 </body>
 </html>

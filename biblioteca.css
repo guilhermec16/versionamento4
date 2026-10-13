@@ -40,6 +40,14 @@ header p {
 .voltar {
     color: #cfe3d8;
     font-size: 14px;
+    transform: translateY(-3px);
+    transition: 0.7s;
+}
+
+.voltar:hover {
+    transform: translateY(-3px);
+    transition: 0.7s;
+    font-size: medium;
 }
 
 main {
@@ -76,4 +84,139 @@ main {
     text-align: center;
     font-size: 14px;
     border-right: 1px solid #cfd8cf;
+}
+
+.contadores div:last-child {
+    border-right: none;
+}
+
+.contadores strong {
+    display: block;
+    font-family: Georgia, serif;
+    font-size: 28px;
+    color: #8a5d12;
+}
+
+.caixa {
+    background: white;
+    border: 1px solid #cfd8cf;
+    border-radius: 6px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.caixa h2 {
+    margin: 0 0 8px;
+}
+
+label {
+    display: block;
+    margin: 14px 0 4px;
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #b9c6bb;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+#busca {
+    margin: 8px 0 12px;
+}
+
+.botao {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    background: #1f4a3a;
+    color: white;
+    cursor: pointer;
+
+}
+
+.botao:hover {
+    background: #173a2d;
+    transform: translateY(-3px);
+    transition: 0.7s;
+    font-size: medium;
+}
+
+.botao.vermelho {
+    background: #a63232;
+}
+
+.botao.vermelho:hover {
+    background: #862626;
+}
+
+#form-livro .botao {
+    width: 100%;
+    margin-top: 18px;
+    padding: 12px;
+    font-size: 16px;
+}
+
+.livro {
+    padding: 14px 0;
+    border-bottom: 1px solid #dde4dd;
+}
+
+.livro:last-child {
+    border-bottom: none;
+}
+
+.livro h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.info {
+    margin: 4px 0;
+    font-size: 14px;
+    color: #55665c;
+}
+
+.etiqueta {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.disponivel {
+    background: #dcebdd;
+    color: #1f5a2f;
+}
+
+.emprestado {
+    background: #f6e6bf;
+    color: #7a5200;
+}
+
+.botoes {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.vazio {
+    padding: 16px 0;
+    text-align: center;
+    color: #55665c;
+}
+
+footer {
+    padding: 0 16px 30px;
+    text-align: center;
+    font-size: 13px;
+    color: #55665c;
+}
+
+#cadastrar {
+    
 }
