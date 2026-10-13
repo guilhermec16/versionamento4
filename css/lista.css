@@ -8,15 +8,10 @@ body {
     color: #222;
 }
 
-header {
-    background: rgba(0, 0, 0, 0.9);
-    padding: 15px;
-    color: #0011ff;
-}
-
 header h2 {
     margin: 0;
     text-align: center;
+    color: #3845ff;
 }
 
 main {
@@ -56,7 +51,7 @@ main {
 
 .numeros strong {
     font-size: 24px;
-    color: #000000;
+    color: #ff0404;
 }
 
 .conteudo {
@@ -114,7 +109,7 @@ button {
 }
 
 .item button {
-    background: #0011ff;
+    background: #ff0000;
     margin-top: 8px;
 }
 
@@ -124,7 +119,7 @@ button {
 }
 
 #aviso {
-    color: #0011ff;
+    color: #ff0000;
 }
 
 @media (max-width: 650px) {
@@ -150,4 +145,18 @@ button {
     .numeros div {
         padding: 8px 3px;
     }
+}
+
+header {
+    background: rgba(0, 0, 0, 0.9);
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
 }
