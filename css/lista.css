@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-image: url("../img/paisagem-natural-og.webp");
+    background-image: url("../img/noite.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -9,9 +9,9 @@ body {
 }
 
 header {
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(0, 0, 0, 0.9);
     padding: 15px;
-    color: #2454a6;
+    color: #0011ff;
 }
 
 header h2 {
@@ -23,7 +23,7 @@ main {
     width: 90%;
     max-width: 950px;
     margin: 40px auto;
-    background: rgba(255, 255, 255, 0.94);
+    background: rgba(10, 0, 99, 0.94);
     padding: 25px;
     border-radius: 12px;
 }
@@ -33,7 +33,7 @@ main {
 }
 
 .resumo h1 {
-    color: #2454a6;
+    color: #3845ff;
 }
 
 .numeros {
@@ -43,7 +43,7 @@ main {
 }
 
 .numeros div {
-    background: #edf3ff;
+    background: #0011ff;
     padding: 15px;
     flex: 1;
     text-align: center;
@@ -56,7 +56,7 @@ main {
 
 .numeros strong {
     font-size: 24px;
-    color: #2454a6;
+    color: #000000;
 }
 
 .conteudo {
@@ -66,11 +66,11 @@ main {
 }
 
 .caixa {
-    background: white;
+    background: #0011ff;
     padding: 20px;
     flex: 1;
     min-width: 0;
-    border: 1px solid #d9e2f2;
+    border: 1px solid #0011ff;
     border-radius: 10px;
 }
 
@@ -80,7 +80,7 @@ input, select {
     margin-top: 5px;
     margin-bottom: 12px;
     box-sizing: border-box;
-    border: 1px solid #c8d4e5;
+    border: 1px solid #0011ff;
     border-radius: 5px;
 }
 
@@ -89,7 +89,7 @@ label {
 }
 
 button {
-    background: #2864d7;
+    background: rgba(10, 0, 99, 0.94);
     color: white;
     border: none;
     padding: 10px 15px;
@@ -97,19 +97,15 @@ button {
     cursor: pointer;
 }
 
-button:hover {
-    background: #1749a8;
-}
-
 #lista {
     margin-top: 15px;
 }
 
 #lista .item {
-    background: white;
+    background: #0011ff;
     padding: 12px;
     margin-top: 10px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #0011ff;
     overflow-wrap: anywhere;
 }
 
@@ -118,24 +114,17 @@ button:hover {
 }
 
 .item button {
-    background: #c03939;
+    background: #0011ff;
     margin-top: 8px;
 }
 
 .feita {
     text-decoration: line-through;
-    color: gray;
+    color: rgb(238, 7, 7);
 }
 
 #aviso {
-    color: #2454a6;
-}
-
-footer {
-    text-align: center;
-    padding: 15px;
-    color: white;
-    background: rgba(20, 40, 70, 0.8);
+    color: #0011ff;
 }
 
 @media (max-width: 650px) {
