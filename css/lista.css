@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("../img/paisagem-natural-og.webp");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #222;
+}
+
+header {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    color: #2454a6;
+}
+
+header h2 {
+    margin: 0;
+    text-align: center;
+}
+
+main {
+    width: 90%;
+    max-width: 950px;
+    margin: 40px auto;
+    background: rgba(255, 255, 255, 0.94);
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.resumo {
+    margin-bottom: 25px;
+}
+
+.resumo h1 {
+    color: #2454a6;
+}
+
+.numeros {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.numeros div {
+    background: #edf3ff;
+    padding: 15px;
+    flex: 1;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.numeros p {
+    margin: 5px;
+}
+
+.numeros strong {
+    font-size: 24px;
+    color: #2454a6;
+}
+
+.conteudo {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.caixa {
+    background: white;
+    padding: 20px;
+    flex: 1;
+    min-width: 0;
+    border: 1px solid #d9e2f2;
+    border-radius: 10px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+    border: 1px solid #c8d4e5;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+}
+
+button {
+    background: #2864d7;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1749a8;
+}
+
+#lista {
+    margin-top: 15px;
+}
+
+#lista .item {
+    background: white;
+    padding: 12px;
+    margin-top: 10px;
+    border-bottom: 1px solid #ddd;
+    overflow-wrap: anywhere;
+}
+
+.item input {
+    width: auto;
+}
+
+.item button {
+    background: #c03939;
+    margin-top: 8px;
+}
+
+.feita {
+    text-decoration: line-through;
+    color: gray;
+}
+
+#aviso {
+    color: #2454a6;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    color: white;
+    background: rgba(20, 40, 70, 0.8);
+}
+
+@media (max-width: 650px) {
+    main {
+        width: auto;
+        margin: 15px;
+        padding: 15px;
+    }
+
+    .conteudo {
+        display: block;
+    }
+
+    .caixa {
+        box-sizing: border-box;
+        margin-bottom: 15px;
+    }
+
+    .numeros {
+        gap: 5px;
+    }
+
+    .numeros div {
+        padding: 8px 3px;
+    }
+}
