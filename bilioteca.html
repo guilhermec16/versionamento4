@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Controle de Biblioteca: cadastre, empreste e devolva livros.">
+  <title>Controle de Biblioteca</title>
+  <link rel="stylesheet" href="biblioteca.css">
+</head>
+<body>
+
+  <header>
+    <div class="coluna">
+      <a class="voltar" href="index.html">← Voltar para o início</a>
+      <h1>📚 Controle de Biblioteca</h1>
+      <p>Cadastre, empreste e devolva livros.</p>
+    </div>
+  </header>
+
+  <main class="coluna">
+    <div id="aviso" class="aviso" role="status" hidden></div>
+
+    <div class="contadores" style="font-family: cursive;">
+      <div><strong id="total">0</strong>Cadastrados</div>
+      <div><strong id="disponiveis">0</strong>Disponíveis</div>
+      <div><strong id="emprestados">0</strong>Emprestados</div>
+    </div>
+
+    <section class="caixa">
+      <h2>Cadastrar livro</h2>
+      <form id="form-livro">
+        <label for="titulo">Título</label>
+        <input id="titulo" type="text" maxlength="100" placeholder="Ex.: Dom Casmurro" required>
+
+        <label for="autor">Autor</label>
+        <input id="autor" type="text" maxlength="80" placeholder="Ex.: Machado de Assis" required>
+
+        <label for="categoria">Categoria</label>
+        <select id="categoria">
+          <option>Programação</option>
+          <option>Redes</option>
+          <option>Design</option>
+          <option>Literatura</option>
+          <option>Outros</option>
+        </select>
+
+        <button type="submit" class="botao">Cadastrar livro</button>
+      </form>
+    </section>
+
+    <section class="caixa">
+      <h2>Acervo</h2>
+      <input id="busca" type="search" placeholder="Pesquisar por título ou autor">
+      <div id="lista-livros"></div>
+    </section>
+  </main>
+
+  <footer>Projeto didático. Os dados ficam salvos apenas neste navegador.</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
