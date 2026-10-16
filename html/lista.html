@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Valdenilson meu patrão</title>
+    <link rel="stylesheet" href="../css/lista.css">
+</head>
+<body>
+
+    <header>
+        <h2>Lista de Tarefas Noturnas</h2>
+    <img src="../img/lua-azul.jpg" alt="Logo" class="logo">
+    </header>
+
+    <main>
+        <section class="resumo">
+            <h1>Organize suas tarefas</h1>
+        </section>
+
+        <section class="numeros">
+            <div>
+                <p>Total</p>
+                <strong id="t-total">0</strong>
+            </div>
+
+            <div>
+                <p>Concluídas</p>
+                <strong id="t-feitas">0</strong>
+            </div>
+
+            <div>
+                <p>Pendentes</p>
+                <strong id="t-pendentes">0</strong>
+            </div>
+        </section>
+
+        <section class="conteudo">
+            <div class="caixa">
+                <h2>Nova tarefa</h2>
+
+                <form id="form-tarefa">
+                    <label for="tarefa">Descrição</label>
+                    <input type="text" id="tarefa" placeholder="Digite uma tarefa" maxlength="120" required>
+
+                    <label for="prioridade">Prioridade</label>
+                    <select id="prioridade">
+                        <option value="Baixa">Baixa</option>
+                        <option value="Média" selected>Média</option>
+                        <option value="Alta">Alta</option>
+                    </select>
+
+                    <button type="submit">Adicionar tarefa</button>
+                </form>
+            </div>
+
+            <div class="caixa">
+                <h2>Minhas tarefas</h2>
+
+                <label for="filtro">Filtrar tarefas</label>
+                <select id="filtro">
+                    <option value="Todas">Todas</option>
+                    <option value="Pendentes">Pendentes</option>
+                    <option value="Concluídas">Concluídas</option>
+                </select>
+
+                <p id="aviso"></p>
+
+                <div id="lista"></div>
+            </div>
+        </section>
+    </main>
+
+<script src="../js/lista.js"></script>
+</body>
+</html>
